@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://microhou.github.io/blog</id>
     <title>Micro self site Blog</title>
-    <updated>2021-08-26T00:00:00.000Z</updated>
+    <updated>2024-12-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://microhou.github.io/blog"/>
     <subtitle>Micro self site Blog</subtitle>
     <icon>https://microhou.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[learning]]></title>
+        <id>https://microhou.github.io/blog/2024/12/01/learning</id>
+        <link href="https://microhou.github.io/blog/2024/12/01/learning"/>
+        <updated>2024-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1. 学习要系统，不能东拼西凑，要系统学习]]></summary>
+        <content type="html"><![CDATA[<ol>
+<li>学习要系统，不能东拼西凑，要系统学习</li>
+<li>学习要有计划，不能盲目学习</li>
+<li>学习要有目标，不能盲目学习</li>
+<li>学习要有方法，不能盲目学习</li>
+<li>学习要有耐心，不能盲目学习</li>
+<li>学习要有毅力，不能盲目学习</li>
+<li>学习要有信心，不能盲目学习</li>
+<li>看视频学习的时候，还是要自己动手实践，不能只看视频。</li>
+</ol>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://microhou.github.io/blog/welcome</id>

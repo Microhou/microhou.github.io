@@ -4,10 +4,27 @@
         <title>Micro self site Blog</title>
         <link>https://microhou.github.io/blog</link>
         <description>Micro self site Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[learning]]></title>
+            <link>https://microhou.github.io/blog/2024/12/01/learning</link>
+            <guid>https://microhou.github.io/blog/2024/12/01/learning</guid>
+            <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. 学习要系统，不能东拼西凑，要系统学习]]></description>
+            <content:encoded><![CDATA[<ol>
+<li>学习要系统，不能东拼西凑，要系统学习</li>
+<li>学习要有计划，不能盲目学习</li>
+<li>学习要有目标，不能盲目学习</li>
+<li>学习要有方法，不能盲目学习</li>
+<li>学习要有耐心，不能盲目学习</li>
+<li>学习要有毅力，不能盲目学习</li>
+<li>学习要有信心，不能盲目学习</li>
+<li>看视频学习的时候，还是要自己动手实践，不能只看视频。</li>
+</ol>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://microhou.github.io/blog/welcome</link>
