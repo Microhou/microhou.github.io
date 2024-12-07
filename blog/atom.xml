@@ -2,11 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://microhou.github.io/blog</id>
     <title>Micro self site Blog</title>
-    <updated>2024-12-06T00:00:00.000Z</updated>
+    <updated>2024-12-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://microhou.github.io/blog"/>
     <subtitle>Micro self site Blog</subtitle>
     <icon>https://microhou.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[react useEffect]]></title>
+        <id>https://microhou.github.io/blog/react useEffect</id>
+        <link href="https://microhou.github.io/blog/react useEffect"/>
+        <updated>2024-12-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[react useEffect 的学习]]></summary>
+        <content type="html"><![CDATA[<p>react useEffect 的学习</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="useeffect">useEffect<a href="https://microhou.github.io/blog/react%20useEffect#useeffect" class="hash-link" aria-label="useEffect的直接链接" title="useEffect的直接链接">​</a></h2>
+<p>useEffect 是 React 中的一个 Hook，用于在函数组件中处理副作用。副作用是指在组件渲染过程中，除了渲染 UI 以外的其他操作，比如数据获取、订阅或者手动更改 DOM 等。</p>
+<p>useEffect 的基本语法如下：</p>
+<div class="language-javascript codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-javascript codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token function" style="color:#d73a49">useEffect</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token comment" style="color:#999988;font-style:italic">// 副作用逻辑</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword control-flow" style="color:#00009f">return</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token comment" style="color:#999988;font-style:italic">// 清理逻辑</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">// 依赖项数组 </span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain">依赖项</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>通常会将Effect 中使用的所有局部变量放入依赖项数组中，这样当依赖项发生变化时，useEffect 会重新执行副作用逻辑。</p>
+<p>useEffect 接受两个参数：一个是副作用逻辑，另一个是依赖项数组。副作用逻辑是一个函数，它会在组件渲染后执行。清理逻辑是一个可选的函数，它会在组件卸载或者依赖项发生变化时执行。</p>
+<p>依赖项数组是一个可选的参数，它是一个数组，包含了一些依赖项。当依赖项发生变化时，useEffect 会重新执行副作用逻辑。如果依赖项数组为空，那么副作用逻辑只会在组件首次渲染后执行一次。</p>
+<p>useEffect 的使用场景包括：</p>]]></content>
+        <author>
+            <name>Microhou</name>
+            <uri>https://github.com/Microhou</uri>
+        </author>
+        <category label="React" term="React"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Micro Front(微前端)]]></title>
         <id>https://microhou.github.io/blog/micro-front</id>
@@ -14,14 +35,17 @@
         <updated>2024-12-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[微前端的学习]]></summary>
         <content type="html"><![CDATA[<p>微前端的学习</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="什么是微前端">什么是微前端<a href="https://microhou.github.io/blog/micro-front#%E4%BB%80%E4%B9%88%E6%98%AF%E5%BE%AE%E5%89%8D%E7%AB%AF" class="hash-link" aria-label="什么是微前端的直接链接" title="什么是微前端的直接链接">​</a></h2>
-<p>微前端是一种设计思想，它将前端应用拆分成多个独立的小应用，每个小应用都可以独立开发、部署和升级，同时它们也可以组合成一个完整的应用。</p>]]></content>
+<p>微前端是一种设计思想，它将前端应用拆分成多个独立的小应用，每个小应用都可以独立开发、部署和升级，同时它们也可以组合成一个完整的应用。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="微前端的优势">微前端的优势<a href="https://microhou.github.io/blog/micro-front#%E5%BE%AE%E5%89%8D%E7%AB%AF%E7%9A%84%E4%BC%98%E5%8A%BF" class="hash-link" aria-label="微前端的优势的直接链接" title="微前端的优势的直接链接">​</a></h2>
+<ol>
+<li>独立开发：每个小应用都可以独立开发，不需要担心与其他应用之间的依赖关系。</li>
+</ol>]]></content>
         <author>
             <name>Microhou</name>
             <uri>https://github.com/Microhou</uri>
         </author>
-        <category label="react" term="react"/>
+        <category label="React" term="React"/>
         <category label="javascript" term="javascript"/>
         <category label="micro front" term="micro front"/>
     </entry>
