@@ -4,10 +4,31 @@
         <title>Micro self site Blog</title>
         <link>https://microhou.github.io/en/blog</link>
         <description>Micro self site Blog</description>
-        <lastBuildDate>Sat, 07 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Dec 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[nodejs 李立超]]></title>
+            <link>https://microhou.github.io/en/blog/nodejs learning</link>
+            <guid>https://microhou.github.io/en/blog/nodejs learning</guid>
+            <pubDate>Fri, 27 Dec 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[nodejs 学习]]></description>
+            <content:encoded><![CDATA[<p>nodejs 学习</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="day1-nodejs-简介和安装">day1 nodejs 简介和安装<a href="https://microhou.github.io/en/blog/nodejs%20learning#day1-nodejs-%E7%AE%80%E4%BB%8B%E5%92%8C%E5%AE%89%E8%A3%85" class="hash-link" aria-label="Direct link to day1 nodejs 简介和安装" title="Direct link to day1 nodejs 简介和安装">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="为什么要使用nodejs">为什么要使用nodejs<a href="https://microhou.github.io/en/blog/nodejs%20learning#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8nodejs" class="hash-link" aria-label="Direct link to 为什么要使用nodejs" title="Direct link to 为什么要使用nodejs">​</a></h3>
+<p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时，它具有以下几个优点：</p>
+<ol>
+<li><strong>高性能</strong>:Node<!-- -->.js 使用事件驱动、非阻塞 I/O 模型，使其非常轻量和高效，适合数据密集型实时应用程序。</li>
+<li><strong>单线程</strong>:Node<!-- -->.js 使用单线程模型，但通过事件循环和异步 I/O 操作，可以处理大量并发连接。</li>
+<li><strong>丰富的生态系统</strong>:Node<!-- -->.js 拥有庞大的包管理器 npm,提供了丰富的第三方模块和库,极大地提高了开发效率。</li>
+<li><strong>全栈开发</strong>:使用 Node.js,开发者可以在前端和后端都使用 JavaScript,从而实现全栈开发,减少了学习成本和上下文切换。</li>
+<li><strong>社区支持</strong>:Node<!-- -->.js 拥有一个活跃的开发者社区,提供了大量的资源、教程和支持。</li>
+<li>nodejs 的单线程可以有高效率的处理任务的能力。</li>
+</ol>
+<p>这些优点使得 Node.js 成为构建高性能、可扩展的网络应用程序的理想选择。</p>]]></content:encoded>
+            <category>Node</category>
+        </item>
         <item>
             <title><![CDATA[react useEffect]]></title>
             <link>https://microhou.github.io/en/blog/react useEffect</link>
