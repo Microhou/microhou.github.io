@@ -26,7 +26,144 @@
 <li><strong>社区支持</strong>:Node<!-- -->.js 拥有一个活跃的开发者社区,提供了大量的资源、教程和支持。</li>
 <li>nodejs 的单线程可以有高效率的处理任务的能力。</li>
 </ol>
-<p>这些优点使得 Node.js 成为构建高性能、可扩展的网络应用程序的理想选择。</p>]]></content:encoded>
+<p>这些优点使得 Node.js 成为构建高性能、可扩展的网络应用程序的理想选择。</p>
+<blockquote>
+<p>特点</p>
+</blockquote>
+<ul>
+<li>单线程 非阻塞，异步</li>
+<li>统一的API</li>
+</ul>
+<blockquote>
+<p>nvm</p>
+</blockquote>
+<ul>
+<li>nvm  list</li>
+<li>nvm  use 18.16.0</li>
+<li>nvm  install 18.16.0</li>
+</ul>
+<blockquote>
+<p>运行node</p>
+</blockquote>
+<ul>
+<li>vscode F5 调试nodejs</li>
+</ul>
+<blockquote>
+<p>nodejs and JavaScript 的区别</p>
+</blockquote>
+<ul>
+<li>ECMAScript, (DOM, BOM) -- 宿主对象</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="day2-同步和异步">day2 同步和异步<a href="https://microhou.github.io/en/blog/nodejs%20learning#day2-%E5%90%8C%E6%AD%A5%E5%92%8C%E5%BC%82%E6%AD%A5" class="hash-link" aria-label="Direct link to day2 同步和异步" title="Direct link to day2 同步和异步">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="进程和线程">进程和线程<a href="https://microhou.github.io/en/blog/nodejs%20learning#%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B" class="hash-link" aria-label="Direct link to 进程和线程" title="Direct link to 进程和线程">​</a></h3>
+<ul>
+<li>进程: 程序的运行环境</li>
+<li>线程: 实际进行运算的东西</li>
+</ul>
+<blockquote>
+<p>同步</p>
+</blockquote>
+<ul>
+<li>通常情况先都是自上向下一行一行执行的</li>
+<li>有可能会阻塞， 前面的代码不执行，后面的代码也不执行</li>
+</ul>
+<blockquote>
+<p>解决同步阻塞的问题</p>
+</blockquote>
+<ul>
+<li>java paython 通过多线程来解决</li>
+</ul>
+<blockquote>
+<p>异步</p>
+</blockquote>
+<ul>
+<li>代码的执行不会阻塞后续代码的运行。</li>
+<li></li>
+<li>异步的问题 --&gt; 异步的代码无法通过return来设置返回值</li>
+<li>通过回调函数来设置返回值</li>
+<li>基于回调 的 代码可读性差</li>
+</ul>
+<blockquote>
+<p>如何解决回调函数的问题了</p>
+</blockquote>
+<ul>
+<li>需要一个东西，可以替代回调函数，用来返回异步的结果</li>
+<li>Promise 横空出世，用来解决回调函数的问题。<!-- -->
+<ul>
+<li>new Promise()</li>
+<li>Promise 是一种用来存储数据的对象<!-- -->
+<ul>
+<li>使用Promise 来存储异步调用的返回值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>问什么会有回调函数，把知识串起来。</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="promise">Promise<a href="https://microhou.github.io/en/blog/nodejs%20learning#promise" class="hash-link" aria-label="Direct link to Promise" title="Direct link to Promise">​</a></h2>
+<blockquote>
+<p>Promise 中维护了两个隐藏属性</p>
+</blockquote>
+<ul>
+<li>PromiseState<!-- -->
+<ul>
+<li>记录Promise的状态<!-- -->
+<ul>
+<li>pending</li>
+<li>fulfilled --&gt; resolved</li>
+<li>rejected --&gt; rejected</li>
+</ul>
+</li>
+<li>state 只能修改一次，一旦修改就不能再修改</li>
+</ul>
+</li>
+<li>Promiseresult</li>
+</ul>
+<blockquote>
+<p>then 和 catch</p>
+</blockquote>
+<ul>
+<li>
+<p>当我们通过then 读取数据的时候，PromiseState 变成fulfilled</p>
+</li>
+<li>
+<p>当我们通过catch 读取数据的时候，PromiseState 变成rejected</p>
+</li>
+<li>
+<p>catch --&gt; <code>js promise.catch(error =&gt; {}) -- then(null, error =&gt; {})</code></p>
+<ul>
+<li>如果有错误，就会执行catch，否则不会执行catch</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>finally</p>
+</blockquote>
+<ul>
+<li>无论成功还是失败，都会执行finally</li>
+<li>finally 中不会接受到reject and resolve 的数据</li>
+</ul>
+<blockquote>
+<p>then() catch() finally() 都会返回一个新的promise</p>
+</blockquote>
+<ul>
+<li>为什么要返回一个promise</li>
+<li>当Promise 中有错误，但是没有被catch, 就会throw 异常</li>
+</ul>
+<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">    promise</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">then</span><span class="token punctuation" style="color:#393A34">(</span><span class="token parameter">res</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> res</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token keyword control-flow" style="color:#00009f">catch</span><span class="token punctuation" style="color:#393A34">(</span><span class="token parameter">err</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> err</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">then</span><span class="token punctuation" style="color:#393A34">(</span><span class="token parameter">res</span><span class="token plain"> </span><span class="token arrow operator" style="color:#393A34">=&gt;</span><span class="token plain"> res</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    promise</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">then</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token method function property-access" style="color:#d73a49">then</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token keyword control-flow" style="color:#00009f">catch</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<ul>
+<li>通常把catch 写在最后。</li>
+<li>后一步读取的是前一步的返回结果。</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="promose-的静态方法">Promose 的静态方法<a href="https://microhou.github.io/en/blog/nodejs%20learning#promose-%E7%9A%84%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95" class="hash-link" aria-label="Direct link to Promose 的静态方法" title="Direct link to Promose 的静态方法">​</a></h2>
+<ul>
+<li>Promise.resolve() --&gt; 创建一个立即完成的Promise</li>
+<li>Promise.reject() --&gt; 创建一个立即失败的Promise</li>
+<li>Promise.all(iterable).then() --&gt; 所有的Promise 都成功，返回一个成功的Promise，, 有一个reject，都会返回一个失败的Promise</li>
+<li>Promise.allSettled([...]) --&gt; 同时返回多个Promise</li>
+<li>Promise.race() --&gt; 只要有一个Promise成功，返回一个成功的Promise，否则返回一个失败的Promise</li>
+<li>Promise.any() --&gt; 只要有一个Promise成功，返回一个成功的Promise，否则返回一个失败的Promise</li>
+</ul>]]></content:encoded>
             <category>Node</category>
         </item>
         <item>
